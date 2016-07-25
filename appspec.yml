@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+ - source: /www
+   destination: /var/www/html/www
+ - source: /index.php
+   destination: /var/www/html/index.php
+hooks:
+  BeforeInstall:
+    - location: before_install.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: application_start.sh
+      timeout: 300
+      runas: root
+  ValidateService:
+    - location: verify_service.sh
+      timeout: 300
+      runas: root
