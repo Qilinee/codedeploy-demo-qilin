@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Check for ansible tools, and attempt to install if not
+# Check for ansible tools, and attempt to install if not-force
 sudo apt-get install software-properties-common -y
 sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt-get update -y
