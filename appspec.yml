@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
  - source: /playbooks
-   destination: /etc/ansible/
+   destination: /etc/ansible/playbooks
  - source: /www
    destination: /var/www/html/www
  - source: /index.php
