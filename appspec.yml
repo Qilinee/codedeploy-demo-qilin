@@ -1,6 +1,8 @@
 version: 0.0
 os: linux
 files:
+ - source: /playbooks
+   destination: /etc/ansible/
  - source: /www
    destination: /var/www/html/www
  - source: /index.php
@@ -14,7 +16,7 @@ hooks:
     - location: application_start.sh
       timeout: 300
       runas: root
-  ValidateService:
-    - location: verify_service.sh
-      timeout: 300
-      runas: root
+#  ValidateService:
+#    - location: verify_service.sh
+#      timeout: 300
+#      runas: root
