@@ -7,10 +7,10 @@ deployment:
     codedeploy:
       qilinwww:
         application_root: /
-        region: us-west-2
+        region: ap-southeast-2
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: cd-qilinwww
+            bucket: codedeploy-qilinwww
             key_pattern: circleci-demo-app-{BRANCH}-{SHORT_COMMIT}
         deployment_group: qilinwww
