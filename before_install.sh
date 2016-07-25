@@ -7,4 +7,4 @@ sudo apt-get update -y
 sudo apt-get install ansible -y
 
 # install ansible prereqs and run playbook
-ansible-playbook -i "localhost" configureserver.yml
+ansible-playbook -i "localhost" ./configureserver.yml
